@@ -1,0 +1,34 @@
+﻿<html>
+<head>
+<title>Wetter Modul (wetter.com) v1.5.0b</title>
+</head>
+<body>
+<h1>Wetter Konfiguration</h1>
+<h2>Modul zur Anzeige der Wetterdaten von Wetter.com für JOOMLA ab v1.7.0</h2>
+
+<h2>Konfiguration</h2>
+
+<p>
+Um das Modul nach erfolgreicher Installation zu konfigurieren, wechseln Sie in der Administrations-Oberfläche
+über das Menü; <strong>Erweiterungen-&gt;Module</strong> zur Auflistung aller installierten Module.
+Selektieren Sie	das Modul <strong>Wetter</strong>. Klicken Sie hierzu einfach auf den Modulnamen.</p>
+
+<p>Nun sehen Sie die Seite <strong>Modul: Bearbeiten.</strong> Hier konfigurieren Sie das Wettermodul
+	ganz nach Ihren Vorstellungen. Besonders wichtig sind die Einstellungen in der Box <strong>Parameter!</strong>!
+</p>
+	
+<p>Um Ihre Einstellungen zu sichern klicken Sie auf <strong>Speichern</strong> (das Diskettensymbol)
+	und vergessen Sie bitte nicht, das Modul abschließend zu aktivieren. Wechseln Sie zum Frontend
+	und kontrollieren Sie, ob das Modul wunschgemäß arbeitet.</p>
+
+<h2>PLZ/World-/WMO-ID</h2>
+
+<pre><strong>PLZ:</strong> Geben Sie einfach Ihre Postleitzahl an.</pre>
+<pre><strong>World-ID:</strong> Es kann passieren, dass sich mehrere Ortschaften <br>eine Postleitzahl teilen. Genauer definieren Sie den<br>gewünschten Ort dann mit der World-ID.
+Um diese herauszufinden begeben Sie sich auf Sie Website <br>von <a href="http://www.wetter.com/" target="_blank">Wetter.com</a> und suchen dort die gewünschte Ortschaft.
+So liefert eine Suche nach Berlin zunächst die PLZ 14199. <br>Lassen Sie sich nun mittels Klick auf den Ortsnamen die <br>Wetterdaten anzeigen, so wird hierzu folgende URL aufge-<br>rufen:<br>&quot;http://www.wetter.com/v2/?SID=&amp;LANG=DE&amp;LOC=7000&amp;LOCFROM=0202&amp;type=WORLD&amp;id=4788&quot;.<br>Interessant ist der Schluss der URL: &quot;type=WORLD&amp;id=4788&quot;.<br>Die World-ID von Berlin ist also 4788.
+(Nehmen Sie lieber die PLZ, falls das bei Ihnen funktioniert ...)</pre>
+<pre><strong>WMO-ID:</strong> Hier gilt Ähnliches wie bei der World-ID.<br>M&ouml;chten Sie zum Beispiel auf Ihrer Website die Wetterdaten<br>von Rhodos anzeigen, finden Sie dazu auf der Website von<br><a href="http://www.wetter.com/" target="_blank">Wetter.com</a> die URL:<br>&quot;http://www.wetter.com/v2/?SID=&amp;LANG=DE&amp;LOC=7000&amp;LOCFROM=7000&amp;type=WMO&amp;name=Rhodos&amp;id=711&quot;.<br>Auch hier interessiert uns der Schlussteil der URL:<br>&quot;type=WMO&amp;name=Rhodos&amp;id=711&quot;.<br>Auf der Konfigurationsseite des Moduls Wetterdienst w&auml;hlen<br>Sie also die Typ-ID &quot;WMO&quot; und tragen als Code die &quot;711&quot; ein.
+</pre>
+</body>
+</html>

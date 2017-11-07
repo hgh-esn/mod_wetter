@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<extension type="module" version="3.x" client="site" method="upgrade">
+  <name>Wetter</name>
+  <author>Hans-Guenter Heiserholt, based upon work of Dirk Federlein(J15), Gerald Berger(J10)</author>
+  <creationDate>September 2011</creationDate>
+  <copyright>Copyright (C) 2011 Open Source Matters. All rights reserved.</copyright>
+  <license>http://www.gnu.org/licenses/gpl-2.0.html GNU/GPL</license>
+  <authorEmail>hgh-esn@t-online.de</authorEmail>
+  <authorUrl>  https://moba-hgh/joomla.de</authorUrl>
+  <version>1.7.0b</version>
+  <description>This module displays the weather of today and (optionally) of tomorrow.
+                With  version 1.7.0a (20110923)it was converted to Joomla 1.7.
+                In version 1.7.0b (20110927) now valid w3c-html-code is generated.</description>
+  <files>
+    <filename module="mod_wetter">mod_wetter.php</filename>
+    <filename>wetter_config.html</filename>
+    <filename>mod_wetter.xml</filename>
+    <filename>helper.php</filename>
+    <filename>index.html</filename>
+    <folder>tmpl</folder>
+    <filename>tmpl/default.php</filename>
+    <filename>tmpl/index.html</filename>
+  </files>
+  <config>
+    <fields name="params">
+      <fieldset name="basic">
+        <field name="PLZ" type="text" default="45000" label="PLZ/WORLD/WMO" description="Postleitzahl, World- oder WMO-ID, je nach Typ-Einstellung der Orts-ID unten." />
+        <field name="Design" type="radio" class="btn-group" default="1" label="Design" description="Art der Anzeige">
+          <option value="1">normale Bilder</option>
+          <option value="2">nur Text-Links</option>
+          <option value="3">Design-Orange</option>
+          <option value="4">Design-Blue</option>
+          <option value="5">kleine Bilder</option>
+        </field>
+        <field name="Tomorrow" type="radio" class="btn-group" default="1" label="Wetter morgen?" description="Wetter morgen anzeigen?">
+          <option value="0">Nein</option>
+          <option value="1">Ja</option>
+        </field>
+        <field name="Localtype" type="text" default="DEPLZ" label="Typ der Orts-ID" description="DEPLZ, WORLD oder WMO. Siehe wetter.com oder wetter_config.html für weitere Details." />
+        <field name="moduleclass_sfx" type="text" default="" label="Module Class Suffix" description="fieldMODULECLASSSUFFIX" />
+      </fieldset>
+      <fieldset name="advanced">
+        <field name="cache" type="list" default="0" label="Caching" description="Select whether to cache the content of this module">
+          <option value="0">Never</option>
+        </field>
+        <field name="cache_time" type="text" default="900" label="Cache Time" description="The time before the module is recached" />
+      </fieldset>
+    </fields>
+  </config>
+</extension>
