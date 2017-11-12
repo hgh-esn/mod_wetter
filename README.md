@@ -1,2 +1,2 @@
-# mod_wetter-dot-com
+# mod_wetter
 wetter.com for Joomla
