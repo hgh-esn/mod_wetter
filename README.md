@@ -1,2 +1,2 @@
 # mod_wetter
-wetter.com for Joomla
+A wetter.com based only german weather-module for Joomla 3.0
